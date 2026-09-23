@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Nirali & Sagar - Baby Shower Celebration",
-  description: "Join us for a joyous celebration of Nirali and Sagar's upcoming bundle of joy! We can't wait to share this special moment with you.",
+  description: "Join us for a joyous celebration of Nirali and Sagar's upcoming bundle of joy! We can't wait to share this special moment with you...",
 };
 
 export default function RootLayout({ children }) {
