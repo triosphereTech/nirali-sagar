@@ -118,7 +118,7 @@ export default function Home() {
             </svg>
           </div>
 
-          <p className="mb-4 text-xs font-semibold tracking-[0.35em] text-[#ffffff] uppercase md:text-sm ">
+          <p className="mb-4 text-xs font-semibold tracking-[0.35em] text-[#ffffff] uppercase md:text-sm [font-family:Arial,Helvetica,sans-serif]">
             Welcome to the Baby Shower of
           </p>
 
@@ -128,17 +128,17 @@ export default function Home() {
 
           <div className="mt-8 mb-6 h-px w-64 max-w-[70vw] bg-white/30" />
 
-          <p className="text-sm tracking-[0.3em] text-white/90 uppercase md:text-base [font-family:var(--font-cormorant)]">
+          <p className="text-sm tracking-[0.3em] text-white/90 uppercase md:text-base">
             December 22&ndash;24, 2026
           </p>
-          <p className="mt-2 text-sm tracking-[0.3em] text-white/90 uppercase md:text-base [font-family:var(--font-cormorant)]">
+          <p className="mt-2 text-sm tracking-[0.3em] text-white/90 uppercase md:text-base">
             Canada &amp; USA
           </p>
 
           <div className="mt-6 mb-10 h-px w-64 max-w-[70vw] bg-white/30" />
 
           {/* Countdown */}
-          <div className="flex items-start gap-6 sm:gap-10 md:gap-14">
+          <div className="flex items-start gap-6 sm:gap-10 md:gap-14 [font-family:var(--font-cormorant)]">
             {items.map((item) => (
               <div key={item.label} className="flex flex-col items-center">
                 <span className="text-4xl font-bold text-[#ffb731] sm:text-5xl md:text-6xl [font-family:var(--font-playfair)]">
@@ -153,7 +153,7 @@ export default function Home() {
 
           {/* Scroll indicator */}
           <div className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2">
-            <span className="text-[10px] font-semibold tracking-[0.3em] text-white/70 uppercase [font-family:var(--font-cormorant)]">
+            <span className="text-[10px] font-semibold tracking-[0.3em] text-white/70 uppercase">
               Scroll
             </span>
             <svg

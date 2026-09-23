@@ -2,18 +2,12 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Playfair_Display, Cormorant_Garamond } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["600", "700"],
   variable: "--font-playfair",
-});
-
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["500", "600"],
-  variable: "--font-cormorant",
 });
 
 const NAV_LINKS = [
@@ -87,7 +81,7 @@ export default function Navbar() {
           DESKTOP / MAIN NAVBAR
       ========================== */}
       <nav
-        className={`${playfair.variable} ${cormorant.variable} fixed top-0 left-0 z-[100] w-full transition-all duration-500 ${
+        className={`fixed top-0 left-0 z-[100] w-full transition-all duration-500 ${
           scrolled
             ? "bg-[#fdfaf6]/95 shadow-[0_4px_24px_rgba(90,40,70,0.08)] backdrop-blur-sm"
             : "bg-gradient-to-b from-black/35 to-transparent"
@@ -103,7 +97,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className={`relative z-[120] text-2xl font-bold tracking-wide transition-colors duration-500 md:text-3xl [font-family:var(--font-playfair)] ${
+            className={`${playfair.variable} relative z-[120] text-2xl font-bold tracking-wide transition-colors duration-500 md:text-3xl [font-family:var(--font-playfair)] ${
               scrolled || menuOpen ? "text-[#b23a70]" : "text-white"
             }`}
           >
@@ -112,7 +106,7 @@ export default function Navbar() {
 
           {/* Desktop links */}
           <div
-            className={`hidden items-center gap-8 text-[13px] font-semibold tracking-[0.15em] uppercase transition-colors duration-500 md:flex lg:gap-10 lg:text-sm [font-family:var(--font-cormorant)] ${
+            className={`hidden items-center gap-8 text-[13px] font-semibold tracking-[0.15em] uppercase transition-colors duration-500 md:flex lg:gap-10 lg:text-sm ${
               scrolled ? "text-[#4a3350]" : "text-white"
             }`}
           >
@@ -130,7 +124,7 @@ export default function Navbar() {
           {/* Desktop RSVP */}
           <a
             href="#rsvp"
-            className="hidden shrink-0 rounded-sm bg-[#b23a70] px-6 py-3 text-xs font-semibold tracking-[0.15em] text-white uppercase transition-all duration-300 hover:bg-[#9c2f60] hover:shadow-[0_8px_24px_rgba(178,58,112,0.2)] sm:inline-block md:text-sm [font-family:var(--font-cormorant)]"
+            className="hidden shrink-0 rounded-sm bg-[#b23a70] px-6 py-3 text-xs font-semibold tracking-[0.15em] text-white uppercase transition-all duration-300 hover:bg-[#9c2f60] hover:shadow-[0_8px_24px_rgba(178,58,112,0.2)] sm:inline-block md:text-sm"
           >
             RSVP
           </a>
@@ -207,7 +201,7 @@ export default function Navbar() {
                 : "translate-y-4 opacity-0"
             }`}
           >
-            <p className="text-[10px] font-semibold tracking-[0.3em] text-[#b23a70] uppercase [font-family:var(--font-cormorant)]">
+            <p className="text-[10px] font-semibold tracking-[0.3em] text-[#b23a70] uppercase">
               Baby Shower Celebration
             </p>
 
@@ -231,12 +225,12 @@ export default function Navbar() {
                 }}
               >
                 {/* Number */}
-                <span className="mr-5 w-7 text-[11px] tracking-[0.1em] text-[#b23a70]/60 [font-family:var(--font-cormorant)]">
+                <span className="mr-5 w-7 text-[11px] tracking-[0.1em] text-[#b23a70]/60">
                   {String(index + 1).padStart(2, "0")}
                 </span>
 
                 {/* Label */}
-                <span className="text-[32px] leading-none text-[#4a3350] transition-colors duration-300 group-hover:text-[#b23a70] [font-family:var(--font-playfair)]">
+                <span className="text-[32px] leading-none text-[#4a3350] transition-colors duration-300 group-hover:text-[#b23a70]">
                   {link.label}
                 </span>
 
@@ -260,18 +254,18 @@ export default function Navbar() {
             <a
               href="#rsvp"
               onClick={closeMenu}
-              className="flex w-full items-center justify-center bg-[#b23a70] px-6 py-4 text-sm font-semibold tracking-[0.2em] text-white uppercase transition-all duration-300 hover:bg-[#9c2f60] [font-family:var(--font-cormorant)]"
+              className="flex w-full items-center justify-center bg-[#b23a70] px-6 py-4 text-sm font-semibold tracking-[0.2em] text-white uppercase transition-all duration-300 hover:bg-[#9c2f60]"
             >
               RSVP
             </a>
 
             {/* Bottom text */}
             <div className="mt-6 flex items-center justify-between">
-              <span className="text-[10px] tracking-[0.18em] text-[#4a3350]/50 uppercase [font-family:var(--font-cormorant)]">
+              <span className="text-[10px] tracking-[0.18em] text-[#4a3350]/50 uppercase">
                 N &amp; S
               </span>
 
-              <span className="text-[10px] tracking-[0.18em] text-[#4a3350]/50 uppercase [font-family:var(--font-cormorant)]">
+              <span className="text-[10px] tracking-[0.18em] text-[#4a3350]/50 uppercase">
                 Forever Begins
               </span>
             </div>

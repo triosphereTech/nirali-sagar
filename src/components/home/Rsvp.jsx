@@ -1,20 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Playfair_Display, Cormorant_Garamond } from "next/font/google";
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-playfair",
-});
-
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-cormorant",
-});
 
 const EVENTS = [
   {
@@ -25,10 +11,10 @@ const EVENTS = [
 ];
 
 const inputClasses =
-  "w-full rounded-md border border-[#e6dbe3] bg-white px-4 py-3 font-semibold text-[#2b1f2b] placeholder:font-normal placeholder:text-[#a89aab] outline-none transition-colors focus:border-[#b23a70] [font-family:var(--font-cormorant)]";
+  "w-full rounded-md border border-[#e6dbe3] bg-white px-4 py-3 font-semibold text-[#2b1f2b] placeholder:font-normal placeholder:text-[#a89aab] outline-none transition-colors focus:border-[#b23a70]";
 
 const labelClasses =
-  "mb-2 block text-xs font-bold tracking-[0.15em] text-[#4a3350] uppercase [font-family:var(--font-cormorant)]";
+  "mb-2 block text-xs font-bold tracking-[0.15em] text-[#4a3350] uppercase";
 
 export default function RSVP() {
   const [events, setEvents] = useState([]);
@@ -51,22 +37,22 @@ export default function RSVP() {
   return (
     <section
       id="rsvp"
-      className={`${playfair.variable} ${cormorant.variable} w-full bg-[#fdf8f5] px-6 py-20 sm:py-28`}
+      className="w-full bg-[#fdf8f5] px-6 py-20 sm:py-28"
     >
       <div className="mx-auto max-w-3xl text-center">
-        <p className="text-xs font-semibold tracking-[0.35em] text-[#b23a70] uppercase [font-family:var(--font-cormorant)]">
+        <p className="text-xs font-semibold tracking-[0.35em] text-[#b23a70] uppercase">
           Kindly Reply
         </p>
-        <h2 className="mt-3 text-4xl text-[#2b1f2b] italic sm:text-5xl [font-family:var(--font-playfair)]">
+        <h2 className="mt-3 text-4xl text-[#2b1f2b] italic sm:text-5xl">
           RSVP
         </h2>
-        <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-[#6b6070] sm:text-lg [font-family:var(--font-cormorant)]">
+        <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-[#6b6070] sm:text-lg">
           It would mean the world to us to have you share in our joy. Let us
           know who&rsquo;s coming and which celebrations you&rsquo;ll join us
           for.
         </p>
 
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs font-semibold tracking-[0.2em] text-[#8a7f8f] uppercase [font-family:var(--font-cormorant)]">
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs font-semibold tracking-[0.2em] text-[#8a7f8f] uppercase">
           <span>Respond by November 15, 2027</span>
           <span className="text-[#c9a227]">&bull;</span>
           <span>December 20, 2027</span>
@@ -77,10 +63,10 @@ export default function RSVP() {
       <div className="mx-auto mt-12 max-w-2xl rounded-2xl border border-[#f0e2ec] bg-white p-8 shadow-[0_20px_60px_rgba(90,40,70,0.1)] sm:p-12">
         {submitted ? (
           <div className="py-10 text-center">
-            <p className="text-2xl text-[#2b1f2b] italic [font-family:var(--font-playfair)]">
+            <p className="text-2xl text-[#2b1f2b] italic">
               Thank you!
             </p>
-            <p className="mt-3 text-[#6b6070] [font-family:var(--font-cormorant)]">
+            <p className="mt-3 text-[#6b6070]">
               Your reply has been received. We can&rsquo;t wait to celebrate
               with you.
             </p>
@@ -143,7 +129,7 @@ export default function RSVP() {
                 className={inputClasses}
                 placeholder="1"
               />
-              <p className="mt-1.5 text-xs text-[#a89aab] [font-family:var(--font-cormorant)]">
+              <p className="mt-1.5 text-xs text-[#a89aab]">
                 Including yourself
               </p>
             </div>
@@ -165,10 +151,10 @@ export default function RSVP() {
                       className="mt-1 h-4 w-4 accent-[#b23a70]"
                     />
                     <span>
-                      <span className="block text-sm font-semibold text-[#2b1f2b] [font-family:var(--font-cormorant)]">
+                      <span className="block text-sm font-semibold text-[#2b1f2b]">
                         {event.name}
                       </span>
-                      <span className="block text-xs text-[#8a7f8f] [font-family:var(--font-cormorant)]">
+                      <span className="block text-xs text-[#8a7f8f]">
                         {event.when}
                       </span>
                     </span>
@@ -192,7 +178,7 @@ export default function RSVP() {
 
             <button
               type="submit"
-              className="w-full rounded-md bg-[#b23a70] py-3.5 text-sm font-semibold tracking-[0.2em] text-white uppercase transition-colors duration-300 hover:bg-[#9c2f60] [font-family:var(--font-cormorant)]"
+              className="w-full rounded-md bg-[#b23a70] py-3.5 text-sm font-semibold tracking-[0.2em] text-white uppercase transition-colors duration-300 hover:bg-[#9c2f60]"
             >
               Send Your Blessing
             </button>
@@ -202,10 +188,10 @@ export default function RSVP() {
 
       {/* Closing note */}
       <div className="mx-auto mt-12 max-w-2xl rounded-2xl bg-[#b23a70] px-8 py-8 text-center">
-        <p className="text-lg text-white italic sm:text-xl [font-family:var(--font-cormorant)] ">
+        <p className="text-lg text-white italic sm:text-xl">
           With love, always
         </p>
-        <p className="mt-1 text-xl font-bold tracking-[0.25em] text-white/90 uppercase [font-family:var(--font-playfair)]">
+        <p className="mt-1 text-xl font-bold tracking-[0.25em] text-white/90 uppercase">
           Nirali &amp; Sagar
         </p>
       </div>
