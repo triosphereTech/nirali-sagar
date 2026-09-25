@@ -42,7 +42,7 @@ export default function Itinerary() {
                 Date &amp; time
               </p>
               <p className="mt-1 text-xl font-semibold tracking-wide text-[#2b1f2b]">
-                20 Dec 2027 &middot; Monday, 10 AM
+                25 Oct 2026 &middot; Sunday, 8:30
               </p>
             </div>
 
@@ -51,7 +51,14 @@ export default function Itinerary() {
                 Venue
               </p>
               <p className="mt-1 text-lg text-[#4a3f4f]">
-                123 Anywhere St., Any City, ST 12345
+                CISE - Council of India Societies of Edmonton
+                <br />
+                9504 37 Ave NW, Edmonton, AB T6E 5N2, Canada
+              </p>
+              <p className="mt-3 text-base text-[#4a3f4f]">
+                705 288 7208
+                <br />
+                825-963-7208
               </p>
             </div>
           </div>

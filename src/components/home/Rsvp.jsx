@@ -6,7 +6,7 @@ const EVENTS = [
   {
     id: "shower",
     name: "Baby Shower Celebration",
-    when: "Monday, Dec 20 • 10 AM onwards",
+    when: "Sunday, Oct 25 • 8:30",
   },
 ];
 
@@ -53,9 +53,7 @@ export default function RSVP() {
         </p>
 
         <div className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs font-semibold tracking-[0.2em] text-[#8a7f8f] uppercase">
-          <span>Respond by November 15, 2027</span>
-          <span className="text-[#c9a227]">&bull;</span>
-          <span>December 20, 2027</span>
+          <span>October 25, 2026 • 8:30</span>
         </div>
       </div>
 

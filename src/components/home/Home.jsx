@@ -23,7 +23,7 @@ const script = Alex_Brush({
 });
 
 // Set your actual wedding date/time here
-const WEDDING_DATE = new Date("2026-12-22T00:00:00");
+const WEDDING_DATE = new Date("2026-10-25T08:30:00");
 
 function useCountdown(target) {
   const [time, setTime] = useState({ days: 0, hours: 0, mins: 0, secs: 0 });
@@ -129,7 +129,7 @@ export default function Home() {
           <div className="mt-8 mb-6 h-px w-64 max-w-[70vw] bg-white/30" />
 
           <p className="text-sm tracking-[0.3em] text-white/90 uppercase md:text-base">
-            December 22&ndash;24, 2026
+            October 25, 2026 &middot; 8:30
           </p>
           <p className="mt-2 text-sm tracking-[0.3em] text-white/90 uppercase md:text-base">
             Canada &amp; USA
