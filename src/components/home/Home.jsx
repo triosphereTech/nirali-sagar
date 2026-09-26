@@ -132,7 +132,7 @@ export default function Home() {
             October 25, 2026 &middot; 8:30
           </p>
           <p className="mt-2 text-sm tracking-[0.3em] text-white/90 uppercase md:text-base">
-            Canada &amp; USA
+            Canada 
           </p>
 
           <div className="mt-6 mb-10 h-px w-64 max-w-[70vw] bg-white/30" />

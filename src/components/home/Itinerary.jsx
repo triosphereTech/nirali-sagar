@@ -50,15 +50,15 @@ export default function Itinerary() {
               <p className="text-[11px] font-semibold tracking-[0.3em] text-[#8a7f8f] uppercase">
                 Venue
               </p>
-              <p className="mt-1 text-lg text-[#4a3f4f]">
+              <p className="mt-1 text-md text-[#4a3f4f]">
                 CISE - Council of India Societies of Edmonton
                 <br />
                 9504 37 Ave NW, Edmonton, AB T6E 5N2, Canada
               </p>
               <p className="mt-3 text-base text-[#4a3f4f]">
-                705 288 7208
+                +1 (705 288 7208)
                 <br />
-                825-963-7208
+                +1 (825 963 7208)
               </p>
             </div>
           </div>
